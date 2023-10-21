@@ -24,6 +24,7 @@ function mealsDisplay() {
     result.innerHTML = meals
       .map((meal) => {
         let ingredients = [];
+        // on boucle sur les ingredients pour les afficher dans une liste à puces
         for (i = 0; i < 21; i++) {
           if (meal[`strIngredient${i}`]) {
             let ingredient = meal[`strIngredient${i}`];
